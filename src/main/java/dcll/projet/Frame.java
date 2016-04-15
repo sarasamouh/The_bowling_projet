@@ -16,7 +16,7 @@ public class Frame {
     /**
      * Score maximum.
      */
-    static final int Quille = 10;
+    static final int QUILLE = 10;
 
     /**
      * constructeur.
@@ -53,10 +53,10 @@ public class Frame {
      * @return status
      */
     final int getStatus() {
-        if (getFirstScore() == Quille) {
+        if (getFirstScore() == QUILLE) {
             return 2; // strike
         }
-        if (getTotalScore() == Quille) {
+        if (getTotalScore() == QUILLE) {
             return 1; // spare
         }
         return 0; // normal
